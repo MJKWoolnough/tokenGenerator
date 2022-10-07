@@ -1,9 +1,8 @@
 import type {Children, Props} from './lib/dom.js';
 import {amendNode, clearNode} from './lib/dom.js';
 import {br, input, label} from './lib/html.js';
+import pageLoad from './lib/load.js';
 import {path, svg} from './lib/svg.js';
-
-declare const pageLoad: Promise<void>;
 
 const labels = (() => {
         let next = 0;
